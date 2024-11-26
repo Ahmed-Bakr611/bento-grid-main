@@ -1,9 +1,8 @@
-# Grid Makes this challenge so easy 👋
-## this video helps me alot to tacke this challenge :
-### mobile first appoach that makes our design more realistic
-#### [Learn CSS Grid the easy way with Kevin Powel]([https://twitter.com/frontendmentor](https://www.youtube.com/watch?v=rg7Fvvl3taU&t=188s)
 # Frontend Mentor - Bento grid
-
+## Grid Makes this challenge so easy 👋
+### this video helps me alot to tacke this challenge :
+#### mobile first appoach that makes our design more realistic
+##### [Learn CSS Grid the easy way with Kevin Powel](https://www.youtube.com/watch?v=rg7Fvvl3taU&t=188s)
 
 **To do this challenge, you need a good understanding of HTML and CSS.**
 
