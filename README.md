@@ -1,16 +1,9 @@
 # Grid Makes this challenge so easy 👋
-this link help me alot to tacke this challenge :
-mobile first appoach that makes our design more realistic
-[Learn CSS Grid the easy way with Kevin Powel]([https://twitter.com/frontendmentor](https://www.youtube.com/watch?v=rg7Fvvl3taU&t=188s)
+## this video helps me alot to tacke this challenge :
+### mobile first appoach that makes our design more realistic
+#### [Learn CSS Grid the easy way with Kevin Powel]([https://twitter.com/frontendmentor](https://www.youtube.com/watch?v=rg7Fvvl3taU&t=188s)
 # Frontend Mentor - Bento grid
 
-![Design preview for the Bento grid coding challenge](./preview.jpg)
-
-## Welcome! 👋
-
-Thanks for checking out this front-end coding challenge.
-
-[Frontend Mentor](https://www.frontendmentor.io) challenges help you improve your coding skills by building realistic projects.
 
 **To do this challenge, you need a good understanding of HTML and CSS.**
 
@@ -24,7 +17,8 @@ Your users should be able to:
 
 - View the optimal layout for the interface depending on their device's screen size
 
-Want some support on the challenge? [Join our community](https://www.frontendmentor.io/community) and ask questions in the **#help** channel.
+![Design preview for the Bento grid coding challenge](./preview.jpg)
+
 
 ### Expected behaviour
 
