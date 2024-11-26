@@ -1,0 +1,274 @@
+:root{
+    /* colors */
+    --clr-purple-100: hsl(254, 88%, 90%); 
+    --clr-purple-500: hsl(256, 67%, 59%); 
+    --clr-yellow-100: hsl(31, 66%, 93%); 
+    --clr-yellow-500: hsl(39, 100%, 71%); 
+    --clr-neutral-white: hsl(0, 0%, 100%); 
+    --clr-neutral-black: hsl(0, 0%, 7%); 
+    
+
+    --paragraph-size:1.125rem;
+
+
+}
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
+}
+
+/* To Easily Deal With Images */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Set core root defaults */
+html:focus-within {
+    scroll-behavior: smooth;
+}
+
+/* Center Content */
+body {
+    min-height: 100vh;
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
+    background-color: #f5f5f5;
+    display: grid;
+    place-content: center;
+}
+
+.bento-grid{
+    display: grid;
+    gap: 1.5rem;
+    font-family: "DM Sans", sans-serif;
+    /* grid-template-columns: repeat(4, 350px);
+    grid-template-rows: 25rem 5rem 15rem 20rem; */
+    /* grid-auto-columns: 22rem; 
+     grid-auto-rows:min-content ; */
+    /* grid-template-columns: repeat(4, 1fr); */
+    /* grid-template-rows: 25rem 0.5rem repeat(2,25rem);  */
+    /* grid-auto-columns: 250px; */
+
+    grid-template-areas:
+    'two'
+    'five'
+    'six'
+    'three'
+    'eight'
+    'seven'
+    'one'
+    'four';
+    
+    padding-block: 2rem;
+    width: min(95%, 70rem);
+    margin-inline: auto;
+}
+
+.card {
+    padding: 2rem;
+    font-size: 0.5rem;
+    display: flex;
+    /* border-radius: 1rem; */
+    border-radius: 0.5rem;
+    box-shadow: 2.5rem 3.75rem 3rem -3rem hsl(var(--clr-secondary-400) / 0.25);
+    background-color:var(--clr-neutral-white);
+    
+    
+}
+/* first card */
+
+@media (min-width:50em) {
+    .bento-grid{
+        /* grid-template-columns: repeat(4, 350px); */
+        grid-template-rows: 25rem 5rem 15rem 20rem;
+        grid-template-areas:
+        'one two two three'
+        'one five six three'
+        'four five six three'
+        'four seven eight eight';
+        }
+}
+@media (max-width:50em) {
+    .card:last-child {
+        flex-direction: column;
+    }
+
+}
+.card:first-child {
+    grid-area: one;
+    /* grid-column: 1;
+    grid-row: span 2; */
+    font-size: 2rem;
+    font-weight:800;
+    background-color: var(--clr-yellow-100);
+    flex-direction: column;
+    align-items: center;
+}
+.card:first-child span{
+    color: var(--clr-purple-500);
+}
+
+/* second card */
+.card:nth-child(2) {
+    grid-area: two;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: var(--clr-purple-500);
+    color: var(--clr-neutral-white);
+}
+.card:nth-child(2)  p:first-of-type {
+    font-size: 2rem;
+    font-weight: 800;
+}
+.card:nth-child(2)  span {
+ color: var(--clr-yellow-500);   
+}
+
+.card:nth-child(2)  img {
+    width: 15rem;
+}
+
+.card:nth-child(2)  p:last-of-type {
+    font-size: var(--paragraph-size);
+    color: var(--clr-purple-100);
+}
+
+
+.card:nth-child(3) {
+    grid-area: three;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    background-color: var(--clr-purple-100);
+    
+}
+.card:nth-child(3) p:first-of-type{
+font-size: 2.5rem;    
+font-weight: 800;
+}
+
+.card:nth-child(3) img {
+    
+}
+
+.card:nth-child(3) p:last-of-type {
+    font-size: 2rem;
+}
+
+.card:nth-child(4) {
+    grid-area: four;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    background-color: var(--clr-yellow-500);
+}
+.card:nth-child(4) p:first-of-type{
+    font-size: 2rem;    
+    font-weight: 800;   
+}
+
+
+.card:nth-child(5) {
+    grid-area: five;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    
+
+}
+.card:nth-child(5) p:first-of-type{
+font-size: 2rem;
+font-weight: 800;
+}
+
+.card:nth-child(6) {
+    grid-area: six;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    background-color: var(--clr-yellow-500);
+    
+}
+.card:nth-child(6) p:first-of-type{
+    font-size: 2rem;
+    font-weight: 800;
+}
+.card:nth-child(6) img{
+    
+
+}
+
+.card:nth-child(7) {
+    grid-area: seven;
+    flex-direction: column;
+    align-items: center;
+
+}
+.card:nth-child(7) p:first-of-type {   
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 800;
+
+}
+
+
+
+.card:last-child {
+    grid-area: eight;
+    align-items: center;
+    gap: 1rem;
+    background-color: var(--clr-purple-500);
+}
+.card:last-child p{
+    color: var(--clr-neutral-white);
+    font-size: 2rem;
+    font-weight: 800;
+    
+}
+
+.card:last-child img{
+    width: 50%;   
+}
+
+.attribution {
+    background-color:var(--clr-yellow-500);
+    line-height: 1.6;
+    margin: 2rem;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    text-align: center;
+}
+
+.attribution a{
+    text-decoration: none;
+    padding: 0.2em;
+    font-style: italic;
+    font-weight: bold;
+}
